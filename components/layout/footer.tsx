@@ -42,7 +42,20 @@ export function Footer() {
         <div className="mx-auto max-w-content px-4 py-8 sm:px-6 lg:px-8">
           <p className="mb-4 font-bold">Communes desservies</p>
           <p className="text-sm leading-7 text-ink-inverse/80">{villes.map((ville) => ville.nom).join(" · ")}</p>
-          <p className="mt-6 text-sm text-ink-inverse/70">© {annee} {entreprise.nom}. Tous droits réservés.</p>
+          <div className="mt-6 flex flex-col gap-2 text-sm text-ink-inverse/70 sm:flex-row sm:items-center sm:justify-between">
+            <p>© {annee} {entreprise.nom}. Tous droits réservés.</p>
+            <p>
+              Site réalisé par{" "}
+              <a
+                href="https://www.weblad.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-ink-inverse underline decoration-ink-inverse/35 underline-offset-4 transition-colors hover:text-accent"
+              >
+                WEBLAD
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

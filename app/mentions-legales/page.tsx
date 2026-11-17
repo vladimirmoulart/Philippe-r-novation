@@ -27,6 +27,21 @@ export default function MentionsLegales() {
           </section>
           <section><h2>Directeur de la publication</h2><p>[À FOURNIR : identité du directeur de la publication]</p></section>
           <section><h2>Hébergement</h2><p>[À FOURNIR : raison sociale, adresse et téléphone de l’hébergeur]</p></section>
+          <section>
+            <h2>Conception et réalisation</h2>
+            <p>
+              Site conçu et développé par WEBLAD, Vladimir Moulart ({""}
+              <a
+                href="https://www.weblad.fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-brand underline underline-offset-4"
+              >
+                weblad.fr
+              </a>
+              ).
+            </p>
+          </section>
           <section><h2>Assurance professionnelle</h2><p>[À FOURNIR : assureur décennal, coordonnées, contrat, activités, validité et zone couverte]</p></section>
           <section><h2>Médiation de la consommation</h2><p>Après une réclamation écrite restée sans solution, le consommateur peut saisir gratuitement le médiateur dont relève l’entreprise.</p><p>[À FOURNIR : nom, adresse et site du médiateur de la consommation]</p></section>
           <section><h2>Propriété intellectuelle</h2><p>Les textes, photographies et éléments graphiques du site sont protégés. Leur reproduction nécessite l’autorisation préalable de leur titulaire, sauf exception prévue par la loi.</p></section>
