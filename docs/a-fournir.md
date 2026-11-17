@@ -23,7 +23,7 @@
 - `[À FOURNIR : confirmation des horaires lundi–samedi 8 h–19 h 45 et dimanche urgences uniquement]`.
 - `[À FOURNIR : rayon ou liste réaliste des communes desservies]`.
 - `[À FOURNIR : quartiers, contraintes locales et types de toitures réellement rencontrés dans chaque ville]`.
-- `[À FOURNIR : réalisations par ville avec date, type de travaux et autorisation de publication]`.
+- `[À FOURNIR : réalisations par ville avec type de travaux et autorisation de publication]`.
 - `[À FOURNIR : fourchettes de prix par service et facteurs de variation]`.
 - `[À FOURNIR : délais indicatifs de devis et d’intervention, uniquement s’ils peuvent être tenus]`.
 - `[À FOURNIR : modalités d’intervention d’urgence et éventuels frais]`.
@@ -45,10 +45,11 @@
 
 ## Images
 
+- `[À FOURNIR : origine, auteur, licence et autorisation d’usage de l’image d’accueil issue de bloc_1601730103_3.jpeg]`.
 - `[À FOURNIR : export des fichiers image000xx et 2022-08-09…]`.
 - `[À FOURNIR : confirmation écrite que Philippe Rénovation a réalisé chaque chantier]`.
 - `[À FOURNIR : droits de publication et absence de données personnelles visibles]`.
-- `[À FOURNIR : ville, date et type de travaux pour chaque chantier]`.
+- `[À FOURNIR : ville et type de travaux pour chaque chantier]`.
 
 ## Technique
 

@@ -16,6 +16,15 @@ export default function Accueil() {
   return (
     <>
       <Section className="hero-modern relative overflow-hidden bg-surface-dark text-ink-inverse">
+        <Image
+          src="/images/accueil/couvreur-pose-tuiles-hero.webp"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-surface-dark/80" aria-hidden="true" />
         <div className="relative z-10 grid min-h-[36rem] items-center gap-12 py-10 lg:grid-cols-[minmax(0,1.35fr)_minmax(20rem,0.65fr)] lg:py-16">
           <div className="max-w-4xl">
             <p className="mb-6 inline-flex items-center gap-2 rounded-full border border-ink-inverse/20 bg-ink-inverse/10 px-4 py-2 text-sm font-bold text-ink-inverse">
@@ -96,7 +105,7 @@ export default function Accueil() {
           <div className="max-w-2xl">
             <p className="mb-3 text-sm font-extrabold text-brand">Nos réalisations</p>
             <h2 className="mb-4 tracking-[-0.025em]">Un aperçu de nos chantiers</h2>
-            <p className="text-lg text-ink-muted">Les réalisations seront publiées avec leur ville, leur date et la nature des travaux après validation des photographies.</p>
+            <p className="text-lg text-ink-muted">Les réalisations sont publiées avec leur ville et la nature des travaux après validation des photographies.</p>
           </div>
           <Link href="/realisations" className="inline-flex min-h-11 items-center gap-2 self-start font-bold text-brand underline-offset-4 hover:underline">Voir toutes les réalisations <span aria-hidden="true">→</span></Link>
         </div>
@@ -108,7 +117,7 @@ export default function Accueil() {
                 <Image src={realisation.photo.src} alt={realisation.photo.alt} width={realisation.photo.largeur} height={realisation.photo.hauteur} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
               </div>
               <div className="p-6">
-                <p className="mb-3 text-sm font-bold text-brand">{realisation.categorie} · {realisation.ville}</p>
+                <p className="mb-3 text-sm font-bold text-brand">{realisation.categorie}{realisation.ville ? ` · ${realisation.ville}` : ""}</p>
                 <h3 className="mb-3">{realisation.titre}</h3>
                 <p className="text-ink-muted">{realisation.resume}</p>
               </div>

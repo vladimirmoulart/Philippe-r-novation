@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const informations = [
   { numero: "01", titre: "Le besoin", texte: "Le contexte du chantier et le problème constaté avant l’intervention." },
   { numero: "02", titre: "Les travaux", texte: "Les opérations réellement effectuées, sans promesse ni information générique." },
-  { numero: "03", titre: "Le chantier", texte: "La commune, la date et des photographies dont la publication a été autorisée." },
+  { numero: "03", titre: "Le chantier", texte: "La commune et des photographies dont la publication a été autorisée." },
 ] as const;
 
 export default function Realisations() {
@@ -31,7 +31,7 @@ export default function Realisations() {
         <div className="mb-12 max-w-2xl">
           <p className="mb-3 text-sm font-extrabold text-brand">Galerie de chantiers</p>
           <h2 className="mb-4">Des réalisations vérifiées, pas des images de catalogue</h2>
-          <p className="text-lg text-ink-muted">Chaque réalisation sera publiée uniquement après confirmation du chantier, de sa localisation et des droits sur les photographies.</p>
+          <p className="text-lg text-ink-muted">Les premières photographies sont en ligne. Leur localisation et le détail des travaux seront ajoutés après confirmation.</p>
         </div>
 
         {realisations.length > 0 ? (
@@ -42,9 +42,10 @@ export default function Realisations() {
                   <Image src={realisation.photo.src} alt={realisation.photo.alt} width={realisation.photo.largeur} height={realisation.photo.hauteur} className="h-full w-full object-cover" />
                 </div>
                 <div className="p-6">
-                  <div className="mb-4 flex flex-wrap items-center gap-2 text-sm font-bold text-ink-muted"><span>{realisation.categorie}</span><span aria-hidden="true">·</span><span>{realisation.ville}</span></div>
+                  <div className="mb-4 flex flex-wrap items-center gap-2 text-sm font-bold text-ink-muted"><span>{realisation.categorie}</span>{realisation.ville && <><span aria-hidden="true">·</span><span>{realisation.ville}</span></>}</div>
                   <h2 className="mb-3 text-[var(--font-size-h3)]">{realisation.titre}</h2>
                   <p className="text-ink-muted">{realisation.resume}</p>
+                  {!realisation.ville && <p className="mt-4 text-xs font-bold text-brand">Ville et travaux à confirmer</p>}
                 </div>
               </article>
             ))}
@@ -61,7 +62,7 @@ export default function Realisations() {
             <div className="flex flex-col justify-center p-8 sm:p-12">
               <p className="mb-3 text-sm font-extrabold text-brand">Sélection en préparation</p>
               <h2 className="mb-4 text-[var(--font-size-h3)]">Les photographies de chantier sont en cours de validation</h2>
-              <p className="max-w-xl text-ink-muted">Aucune image de banque ne sera présentée comme une réalisation. Les premiers chantiers seront ajoutés dès que leurs photos, leur ville, leur date et leur description auront été confirmées.</p>
+              <p className="max-w-xl text-ink-muted">Aucune image de banque ne sera présentée comme une réalisation. Les premiers chantiers seront ajoutés dès que leurs photos, leur ville et leur description auront été confirmées.</p>
             </div>
           </div>
         )}
