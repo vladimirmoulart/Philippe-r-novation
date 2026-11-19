@@ -31,7 +31,7 @@ export const entreprise = {
   } satisfies Record<string, Telephone>,
   email: "contact@toiture-drome-gard-vaucluse.fr",
   horaires: [
-    { jours: "Du lundi au samedi", heures: "8 h–19 h 45" },
+    { jours: "Du lundi au samedi", heures: "8h00–19h45" },
     { jours: "Dimanche", heures: "Urgences uniquement" },
   ] satisfies Horaire[],
   zone: "[À FOURNIR : rayon ou liste réaliste des communes desservies]",

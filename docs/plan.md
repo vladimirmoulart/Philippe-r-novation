@@ -5,7 +5,7 @@
 - `/` — Accueil.
 - `/urgence-fuite-toiture` — Urgence fuite 7 j/7.
 - `/services` — Vue d’ensemble.
-- `/services/toiture` — pose, rénovation, isolation, charpente, fenêtre de toit, cheminée, entretien et réparation présentés sur une page unique.
+- `/services/toiture` — pose, rénovation, charpente, fenêtre de toit, cheminée, entretien et réparation présentés sur une page unique.
 - `/services/gouttiere-zinguerie` — gouttière et zinguerie sur une page unique.
 - `/services/facade` — ravalement, nettoyage et protection sur une page unique.
 - `/services/peinture` — peinture intérieure, boiseries et ferronneries sur une page unique.
@@ -31,7 +31,7 @@ En-tête avec appel et devis, navigation clavier, fil d’Ariane hors accueil, p
 
 ### Accueil
 
-Héros local et urgence sans slider, univers de services, déroulé d’intervention, zone réelle, réalisations vérifiées, avis documentés, garanties factuelles, urgence, FAQ et appel à l’action.
+Héros local et urgence sans slider, univers de services, déroulé d’intervention, zone réelle, réalisations vérifiées, page d’avis documentés, garanties factuelles, urgence, FAQ et appel à l’action.
 
 ### Service
 

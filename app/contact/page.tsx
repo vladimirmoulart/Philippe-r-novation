@@ -40,7 +40,6 @@ export default function Contact() {
         </div>
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           <Carte className="flex min-h-60 flex-col">
-            <span className="mb-8 grid h-11 w-11 place-items-center rounded-full bg-brand-subtle font-bold text-brand" aria-hidden="true">↗</span>
             <h3 className="mb-3">Téléphone</h3>
             <LienTelephone e164={entreprise.telephones.fixe.e164} contexte="contact_carte" className="font-bold text-brand underline-offset-4 hover:underline">{entreprise.telephones.fixe.display}</LienTelephone>
             <LienTelephone e164={entreprise.telephones.urgence.e164} contexte="contact_carte" className="mt-2 font-bold text-brand underline-offset-4 hover:underline">{entreprise.telephones.urgence.display}</LienTelephone>

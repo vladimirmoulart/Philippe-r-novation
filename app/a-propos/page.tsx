@@ -39,7 +39,7 @@ export default function APropos() {
     <Section className="bg-surface-muted">
       <div className="max-w-3xl"><p className="mb-3 text-sm font-extrabold text-brand">Les domaines d’intervention</p><h2 className="mb-5">Un même contact pour l’enveloppe et les finitions du bâtiment</h2><p className="text-lg text-ink-muted">Les services sont organisés en quatre thèmes pour identifier rapidement le bon point d’entrée.</p></div>
       <div className="mt-10 grid gap-5 sm:grid-cols-2">
-        {universServices.map((univers) => <Carte key={univers.slug}><h3 className="mb-3">{univers.titre}</h3><p className="mb-5 text-ink-muted">{univers.resume}</p><Link href={`/services/${univers.slug}`} className="font-bold text-brand underline-offset-4 hover:underline">Voir les services<span className="sr-only"> de {univers.titre}</span> →</Link></Carte>)}
+        {universServices.map((univers) => <Carte key={univers.slug}><h3 className="mb-3">{univers.titre}</h3><p className="mb-5 text-ink-muted">{univers.resume}</p><Link href={`/services/${univers.slug}`} className="font-bold text-brand underline-offset-4 hover:underline">Voir les services<span className="sr-only"> de {univers.titre}</span></Link></Carte>)}
       </div>
     </Section>
 

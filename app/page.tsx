@@ -34,7 +34,7 @@ export default function Accueil() {
             <h1 className="mb-7 max-w-4xl tracking-[-0.035em]">Couvreur à Rochegude <span className="text-accent">—</span> Urgence fuite 7 j/7</h1>
             <p className="mb-9 max-w-2xl text-[var(--font-size-lead)] text-ink-inverse/80">Toiture, gouttière, zinguerie, façade et peinture dans le secteur de Rochegude.</p>
             <div className="flex flex-wrap gap-3">
-              <LienTelephone e164={entreprise.telephones.urgence.e164} contexte="hero_accueil" className="inline-flex min-h-12 items-center gap-2 rounded-button bg-brand px-6 py-3 font-bold text-ink-inverse shadow-raised transition-[transform,background-color,box-shadow] hover:-translate-y-0.5 hover:bg-brand-hover"><span aria-hidden="true">↗</span> Appeler maintenant</LienTelephone>
+              <LienTelephone e164={entreprise.telephones.urgence.e164} contexte="hero_accueil" className="inline-flex min-h-12 items-center rounded-button bg-brand px-6 py-3 font-bold text-ink-inverse shadow-raised transition-[transform,background-color,box-shadow] hover:-translate-y-0.5 hover:bg-brand-hover">Appeler maintenant</LienTelephone>
               <LienDevis contexte="hero_accueil" className="inline-flex min-h-12 items-center rounded-button border border-ink-inverse/35 bg-ink-inverse/10 px-6 py-3 font-bold text-ink-inverse backdrop-blur-sm transition-colors hover:bg-ink-inverse/20">Demander un devis</LienDevis>
             </div>
           </div>
@@ -58,6 +58,10 @@ export default function Accueil() {
         <div className="mx-auto grid max-w-content divide-y divide-border sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4">
           <div className="flex flex-col items-center justify-center px-6 py-7 text-center">
             <p className="font-display text-3xl font-extrabold text-brand">5/5</p>
+            <div className="mt-1 flex gap-1 text-xl leading-none text-rating" aria-hidden="true">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <span className="sr-only">Note de cinq étoiles sur cinq</span>
             <p className="mt-1 text-sm font-bold text-ink-muted">avis clients</p>
           </div>
           <div className="flex flex-col items-center justify-center px-6 py-7 text-center">
@@ -82,14 +86,13 @@ export default function Accueil() {
             <h2 className="mb-4 tracking-[-0.025em]">Une réponse adaptée à chaque partie du bâtiment</h2>
             <p className="text-lg text-ink-muted">Quatre pages thématiques rassemblent les métiers de Philippe Rénovation.</p>
           </div>
-          <Link href="/services" className="inline-flex min-h-11 items-center gap-2 self-start font-bold text-brand underline-offset-4 hover:underline">Voir tous les services <span aria-hidden="true">→</span></Link>
+          <Link href="/services" className="inline-flex min-h-11 items-center self-start font-bold text-brand underline-offset-4 hover:underline">Voir tous les services</Link>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {universServices.map((univers, index) => (
             <Carte key={univers.slug} className="group flex min-h-72 flex-col overflow-hidden">
               <div className="mb-8 flex items-center justify-between">
                 <span className="grid h-11 w-11 place-items-center rounded-full bg-brand-subtle font-display text-sm font-extrabold text-brand">{String(index + 1).padStart(2, "0")}</span>
-                <span className="text-xl text-border transition-transform group-hover:translate-x-1 group-hover:text-brand" aria-hidden="true">→</span>
               </div>
               <h3 className="mb-3">{univers.titre}</h3>
               <p className="mb-4 text-ink-muted">{univers.resume}</p>
@@ -107,7 +110,7 @@ export default function Accueil() {
             <h2 className="mb-4 tracking-[-0.025em]">Un aperçu de nos chantiers</h2>
             <p className="text-lg text-ink-muted">Les réalisations sont publiées avec leur ville et la nature des travaux après validation des photographies.</p>
           </div>
-          <Link href="/realisations" className="inline-flex min-h-11 items-center gap-2 self-start font-bold text-brand underline-offset-4 hover:underline">Voir toutes les réalisations <span aria-hidden="true">→</span></Link>
+          <Link href="/realisations" className="inline-flex min-h-11 items-center self-start font-bold text-brand underline-offset-4 hover:underline">Voir toutes les réalisations</Link>
         </div>
 
         <div className="grid gap-5 md:grid-cols-3">
@@ -117,7 +120,7 @@ export default function Accueil() {
                 <Image src={realisation.photo.src} alt={realisation.photo.alt} width={realisation.photo.largeur} height={realisation.photo.hauteur} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
               </div>
               <div className="p-6">
-                <p className="mb-3 text-sm font-bold text-brand">{realisation.categorie}{realisation.ville ? ` · ${realisation.ville}` : ""}</p>
+                <p className="mb-3 text-sm font-bold text-brand">{realisation.categorie} · {realisation.ville}</p>
                 <h3 className="mb-3">{realisation.titre}</h3>
                 <p className="text-ink-muted">{realisation.resume}</p>
               </div>

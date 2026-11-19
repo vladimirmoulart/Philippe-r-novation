@@ -28,7 +28,7 @@ Condition de publication : contenu local vérifié et au moins un élément conc
 
 Décision révisée : quatre pages thématiques au lieu de pages dédiées à chaque sous-métier, plus la page autonome d’urgence.
 
-- Toiture : pose, rénovation, changement de tuiles, isolation, charpente, fenêtre de toit, cheminée, nettoyage, protection et réparation.
+- Toiture : pose, rénovation, changement de tuiles, charpente, fenêtre de toit, cheminée, nettoyage, protection et réparation.
 - Urgence fuite : page conversion distincte.
 - Gouttière et zinguerie : pose, nettoyage, réparation et zinguerie.
 - Façade : ravalement, nettoyage et protection.

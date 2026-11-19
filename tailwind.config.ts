@@ -25,6 +25,7 @@ const config: Config = {
         focus: "var(--color-focus)",
         error: "var(--color-error)",
         success: "var(--color-success)",
+        rating: "var(--color-rating)",
       },
       fontFamily: {
         sans: ["var(--font-roboto)", "Arial", "sans-serif"],

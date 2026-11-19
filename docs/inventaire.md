@@ -69,7 +69,7 @@ Le menu compte en réalité 11 entrées « Toiture », ce qui porte le total vis
 - Téléphone fixe : 04 90 30 85 07 — cible attendue `tel:+33490308507`.
 - Mobile et urgences : 06 30 26 73 61 — cible attendue `tel:+33630267361`.
 - E-mail : `contact@toiture-drome-gard-vaucluse.fr`.
-- Lundi à samedi : 8 h–19 h 45.
+- Lundi à samedi : 8h00–19h45.
 - Dimanche : urgences uniquement.
 - Page Facebook liée depuis certaines pages ; URL exacte à relever dans l’export.
 - Fiche Google : `[À FOURNIR : URL de la fiche Google Business Profile]`.

@@ -3,10 +3,10 @@
 
 :root {
   /* Palette orange et gris anthracite relevée sur le site historique. */
-  --color-brand: #c63b00;
+  --color-brand: #d63a00;
   --color-brand-hover: #9f3000;
-  --color-brand-subtle: #fff4ed;
-  --color-accent: #ff3d0a;
+  --color-brand-subtle: #fffaf8;
+  --color-accent: var(--color-brand);
   --color-ink: #252a31;
   --color-ink-muted: #525866;
   --color-ink-inverse: #ffffff;
@@ -17,6 +17,7 @@
   --color-focus: #175cd3;
   --color-error: #b42318;
   --color-success: #067647;
+  --color-rating: #f5b301;
 
   --font-size-body: 1rem;
   --font-size-small: 0.875rem;
@@ -49,6 +50,7 @@
   --color-focus: var(--color-focus);
   --color-error: var(--color-error);
   --color-success: var(--color-success);
+  --color-rating: var(--color-rating);
   --font-sans: var(--font-roboto);
   --font-display: var(--font-montserrat);
 }
@@ -101,6 +103,39 @@ summary {
   color: var(--color-ink-inverse);
 }
 
+.logo-header-panel,
+.contact-header-panel {
+  position: relative;
+  min-height: 5rem;
+  overflow: hidden;
+  background-color: var(--color-accent);
+  isolation: isolate;
+}
+
+.logo-header-panel {
+  padding: 0.75rem 2.75rem 0.75rem 1.25rem;
+  clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%);
+}
+
+.contact-header-panel {
+  min-width: 10.5rem;
+  padding: 0.75rem 1.5rem 0.75rem 2.75rem;
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.logo-header-panel::before,
+.contact-header-panel::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    conic-gradient(from 45deg at 25% 25%, transparent 0 25%, rgb(255 255 255 / 0.11) 0 50%, transparent 0 75%, rgb(37 42 49 / 0.08) 0),
+    conic-gradient(from 225deg at 75% 75%, transparent 0 25%, rgb(255 255 255 / 0.08) 0 50%, transparent 0 75%, rgb(37 42 49 / 0.1) 0);
+  background-position: 0 0, 2.75rem 2.75rem;
+  background-size: 5.5rem 5.5rem;
+  content: "";
+}
+
 .hero-modern::before {
   position: absolute;
   inset: 0;
@@ -123,6 +158,21 @@ summary {
   content: "";
   filter: blur(9rem);
   opacity: 0.22;
+}
+
+.avis-carousel-transition {
+  animation: avis-carousel-enter 320ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes avis-carousel-enter {
+  from {
+    opacity: 0.55;
+    transform: translateY(0.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

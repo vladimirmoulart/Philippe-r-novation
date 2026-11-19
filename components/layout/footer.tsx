@@ -14,6 +14,16 @@ export function Footer() {
           <address className="mt-4 not-italic text-ink-inverse/85">
             {entreprise.adresse.voie}<br />{entreprise.adresse.codePostal} {entreprise.adresse.ville}
           </address>
+          <div className="mt-6">
+            <dl className="grid gap-2 text-ink-inverse/85">
+              {entreprise.horaires.map((horaire) => (
+                <div key={horaire.jours}>
+                  <dt className="font-bold text-ink-inverse">{horaire.jours}</dt>
+                  <dd>{horaire.heures}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
         </div>
         <div>
           <p className="mb-3 font-display text-lg font-bold">Nous contacter</p>
@@ -24,10 +34,13 @@ export function Footer() {
           </ul>
         </div>
         <div>
-          <p className="mb-3 font-display text-lg font-bold">Horaires</p>
-          <dl className="grid gap-2 text-ink-inverse/85">
-            {entreprise.horaires.map((horaire) => <div key={horaire.jours}><dt className="font-bold text-ink-inverse">{horaire.jours}</dt><dd>{horaire.heures}</dd></div>)}
-          </dl>
+          <p className="mb-3 font-display text-lg font-bold">Découvrir</p>
+          <ul className="grid gap-2">
+            <li><Link href="/services" className="underline-offset-4 hover:underline">Nos services</Link></li>
+            <li><Link href="/realisations" className="underline-offset-4 hover:underline">Réalisations</Link></li>
+            <li><Link href="/a-propos" className="underline-offset-4 hover:underline">À propos</Link></li>
+            <li><Link href="/avis" className="underline-offset-4 hover:underline">Avis</Link></li>
+          </ul>
         </div>
         <div>
           <p className="mb-3 font-display text-lg font-bold">Liens utiles</p>

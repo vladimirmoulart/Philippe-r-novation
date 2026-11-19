@@ -8,69 +8,85 @@ export type PhotoRealisation = {
 export type Realisation = {
   slug: string;
   titre: string;
-  ville?: string;
+  ville: string;
   categorie: "Toiture" | "Gouttière et zinguerie" | "Façade" | "Peinture";
   resume: string;
   travaux: readonly string[];
   photo: PhotoRealisation;
 };
 
-// Photos ajoutées par le client. Ville, travaux et droits restent à confirmer.
+// Photos, villes et travaux confirmés par le client. Les droits restent à confirmer.
 export const realisations: readonly Realisation[] = [
   {
+    slug: "peinture-toiture-teintes",
+    titre: "Peinture sur toiture",
+    ville: "Nyons",
+    categorie: "Peinture",
+    resume: "Présentation de différentes teintes de peinture pour une couverture en tuiles.",
+    travaux: ["Peinture sur toiture"],
+    photo: { src: "/images/realisations/peinture-toiture.jpg", alt: "Différentes teintes de peinture appliquées sur des tuiles", largeur: 720, hauteur: 640 },
+  },
+  {
     slug: "toiture-tuiles-faitage",
-    titre: "Couverture en tuiles et lignes de faîtage",
-    categorie: "Toiture",
-    resume: "Vue rapprochée d’une couverture en tuiles et de ses lignes de faîtage.",
-    travaux: [],
+    titre: "Peinture sur tuiles",
+    ville: "Rochegude",
+    categorie: "Peinture",
+    resume: "Peinture d’une couverture en tuiles.",
+    travaux: ["Peinture sur tuiles"],
     photo: { src: "/images/realisations/toiture-tuiles-faitage.webp", alt: "Couverture en tuiles avec lignes de faîtage", largeur: 1600, hauteur: 1200 },
   },
   {
     slug: "facade-maison-claire",
-    titre: "Façade claire d’une maison",
+    titre: "Peinture de façade",
+    ville: "Bollène",
     categorie: "Façade",
-    resume: "Vue générale de la façade principale de la maison.",
-    travaux: [],
+    resume: "Peinture de la façade principale d’une maison.",
+    travaux: ["Peinture de façade"],
     photo: { src: "/images/realisations/facade-maison-claire.webp", alt: "Façade claire d’une maison avec encadrements de fenêtres", largeur: 720, hauteur: 531 },
   },
   {
     slug: "toiture-tuiles-vue-ensemble",
-    titre: "Vue d’ensemble d’une toiture en tuiles",
-    categorie: "Toiture",
-    resume: "Vue en hauteur d’une couverture en tuiles avec faîtages et arêtiers.",
-    travaux: [],
+    titre: "Peinture sur tuiles",
+    ville: "Orange",
+    categorie: "Peinture",
+    resume: "Peinture d’une couverture en tuiles.",
+    travaux: ["Peinture sur tuiles"],
     photo: { src: "/images/realisations/toiture-tuiles-vue-ensemble.webp", alt: "Vue d’ensemble d’une toiture en tuiles", largeur: 1600, hauteur: 1200 },
   },
   {
     slug: "toiture-tuiles-fenetre-de-toit",
-    titre: "Toiture en tuiles avec fenêtre de toit",
-    categorie: "Toiture",
-    resume: "Vue panoramique d’une couverture en tuiles intégrant une fenêtre de toit.",
-    travaux: [],
+    titre: "Peinture sur tuiles",
+    ville: "Pierrelatte",
+    categorie: "Peinture",
+    resume: "Peinture d’une couverture en tuiles.",
+    travaux: ["Peinture sur tuiles"],
     photo: { src: "/images/realisations/toiture-tuiles-fenetre-de-toit.webp", alt: "Couverture en tuiles avec une fenêtre de toit", largeur: 1600, hauteur: 778 },
   },
   {
     slug: "toiture-tuiles-raccords",
-    titre: "Raccords d’une toiture en tuiles",
+    titre: "Rénovation complète d’une toiture",
+    ville: "Saint-Paul-Trois-Châteaux",
     categorie: "Toiture",
-    resume: "Vue d’une couverture en tuiles et de ses raccords entre plusieurs pans.",
-    travaux: [],
+    resume: "Rénovation à neuf d’une couverture en tuiles.",
+    travaux: ["Rénovation de toiture à neuf"],
     photo: { src: "/images/realisations/toiture-tuiles-raccords.webp", alt: "Raccords entre plusieurs pans d’une toiture en tuiles", largeur: 1600, hauteur: 1200 },
   },
   {
     slug: "facade-pignon-clair",
-    titre: "Pignon et façade claire",
+    titre: "Peinture de façade",
+    ville: "Valréas",
     categorie: "Façade",
-    resume: "Vue latérale d’une maison avec pignon et façade de teinte claire.",
-    travaux: [],
+    resume: "Peinture d’une façade et de son pignon.",
+    travaux: ["Peinture de façade"],
     photo: { src: "/images/realisations/facade-pignon-clair.webp", alt: "Pignon et façade claire d’une maison", largeur: 720, hauteur: 531 },
   },
   {
     slug: "facade-etat-initial",
-    titre: "État d’une façade avec traces sombres",
+    titre: "Nettoyage de façade",
+    ville: "Vaison-la-Romaine",
     categorie: "Façade",
-    resume: "Photographie montrant les traces présentes sur une partie de la façade.",
-    travaux: [],
+    resume: "Nettoyage d’une façade présentant des traces sombres.",
+    travaux: ["Nettoyage de façade"],
     photo: { src: "/images/realisations/facade-etat-initial.webp", alt: "Façade présentant des traces sombres", largeur: 720, hauteur: 521 },
   },
 ];

@@ -20,7 +20,6 @@ export default function Services() {
           <Carte key={univers.slug} className="group flex min-h-72 flex-col">
             <div className="mb-8 flex items-center justify-between">
               <span className="grid h-11 w-11 place-items-center rounded-full bg-brand-subtle font-display text-sm font-extrabold text-brand">0{index + 1}</span>
-              <span className="text-xl text-border transition-transform group-hover:translate-x-1 group-hover:text-brand" aria-hidden="true">→</span>
             </div>
             <h2 className="mb-4">{univers.titre}</h2>
             <p className="mb-6 text-ink-muted">{univers.resume}</p>

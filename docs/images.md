@@ -17,20 +17,20 @@ Sept fichiers ont été déposés directement dans le projet par le client : qu
 
 | Fichier utilisé | Sujet | Source | Statut |
 |---|---|---|---|
-| `toiture-tuiles-faitage.webp` | Toiture en tuiles et faîtages | Fichier client `image00001-scaled.jpeg` | Ville, travaux et droits à confirmer |
-| `toiture-tuiles-vue-ensemble.webp` | Vue d’ensemble d’une toiture | Fichier client `image00003-scaled.jpeg` | Ville, travaux et droits à confirmer |
-| `toiture-tuiles-fenetre-de-toit.webp` | Toiture avec fenêtre de toit | Fichier client `image00019-scaled-2.jpeg` | Ville, travaux et droits à confirmer |
-| `toiture-tuiles-raccords.webp` | Raccords de toiture | Fichier client `2022-08-09.jpg` | Ville, travaux et droits à confirmer |
-| `facade-etat-initial.webp` | Façade avec traces | Capture client | Ville, travaux et droits à confirmer |
-| `facade-pignon-clair.webp` | Pignon clair | Capture client | Ville, travaux et droits à confirmer |
-| `facade-maison-claire.webp` | Façade principale claire | Capture client | Ville, travaux et droits à confirmer |
+| `toiture-tuiles-faitage.webp` | Peinture sur tuiles à Rochegude | Fichier client `image00001-scaled.jpeg` | Droits à confirmer |
+| `toiture-tuiles-vue-ensemble.webp` | Peinture sur tuiles à Orange | Fichier client `image00003-scaled.jpeg` | Droits à confirmer |
+| `toiture-tuiles-fenetre-de-toit.webp` | Peinture sur tuiles à Pierrelatte | Fichier client `image00019-scaled-2.jpeg` | Droits à confirmer |
+| `toiture-tuiles-raccords.webp` | Rénovation complète d’une toiture à Saint-Paul-Trois-Châteaux | Fichier client `2022-08-09.jpg` | Droits à confirmer |
+| `facade-etat-initial.webp` | Nettoyage de façade à Vaison-la-Romaine | Capture client | Droits à confirmer |
+| `facade-pignon-clair.webp` | Peinture de façade à Valréas | Capture client | Droits à confirmer |
+| `facade-maison-claire.webp` | Peinture de façade à Bollène | Capture client | Droits à confirmer |
+| `peinture-toiture.jpg` | Différentes teintes de peinture pour toiture à Nyons | Fichier fourni par le client le 19 novembre 2026 | Droits à confirmer |
 
 ## Informations encore attendues
 
 - `[À FOURNIR : export des fichiers image000xx et 2022-08-09…]`.
 - `[À FOURNIR : confirmation écrite que Philippe Rénovation a réalisé chaque chantier]`.
 - `[À FOURNIR : droits de publication et absence de données personnelles visibles]`.
-- `[À FOURNIR : ville et type de travaux pour chaque chantier]`.
 
 ## Banque d’images temporaire
 

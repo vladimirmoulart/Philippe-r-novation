@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { BlocAppel } from "@/components/blocs/bloc-appel";
 import { HeroInterne } from "@/components/pages/hero-interne";
+import { GalerieRealisations } from "@/components/realisations/galerie-realisations";
 import { Carte } from "@/components/ui/carte";
 import { Section } from "@/components/ui/section";
-import { realisations } from "@/content/realisations";
 
 export const metadata: Metadata = {
   title: "Réalisations",
@@ -31,41 +30,10 @@ export default function Realisations() {
         <div className="mb-12 max-w-2xl">
           <p className="mb-3 text-sm font-extrabold text-brand">Galerie de chantiers</p>
           <h2 className="mb-4">Des réalisations vérifiées, pas des images de catalogue</h2>
-          <p className="text-lg text-ink-muted">Les premières photographies sont en ligne. Leur localisation et le détail des travaux seront ajoutés après confirmation.</p>
+          <p className="text-lg text-ink-muted">Découvrez une sélection de travaux de toiture et de façade réalisés dans les communes voisines de Rochegude.</p>
         </div>
 
-        {realisations.length > 0 ? (
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {realisations.map((realisation) => (
-              <article key={realisation.slug} className="overflow-hidden rounded-card border border-border bg-surface shadow-card">
-                <div className="aspect-[4/3] overflow-hidden bg-surface-muted">
-                  <Image src={realisation.photo.src} alt={realisation.photo.alt} width={realisation.photo.largeur} height={realisation.photo.hauteur} className="h-full w-full object-cover" />
-                </div>
-                <div className="p-6">
-                  <div className="mb-4 flex flex-wrap items-center gap-2 text-sm font-bold text-ink-muted"><span>{realisation.categorie}</span>{realisation.ville && <><span aria-hidden="true">·</span><span>{realisation.ville}</span></>}</div>
-                  <h2 className="mb-3 text-[var(--font-size-h3)]">{realisation.titre}</h2>
-                  <p className="text-ink-muted">{realisation.resume}</p>
-                  {!realisation.ville && <p className="mt-4 text-xs font-bold text-brand">Ville et travaux à confirmer</p>}
-                </div>
-              </article>
-            ))}
-          </div>
-        ) : (
-          <div className="grid overflow-hidden rounded-card border border-border bg-surface-muted lg:grid-cols-[0.8fr_1.2fr]">
-            <div className="grid min-h-72 place-items-center border-b border-border p-8 lg:border-b-0 lg:border-r">
-              <div className="relative h-36 w-44" aria-hidden="true">
-                <div className="absolute inset-x-0 bottom-0 h-24 rounded-card border-2 border-border bg-surface" />
-                <div className="absolute left-7 top-5 h-24 w-32 -rotate-12 rounded-card border-2 border-brand bg-brand-subtle" />
-                <div className="absolute bottom-5 left-1/2 h-12 w-8 -translate-x-1/2 rounded-t-button bg-surface-dark" />
-              </div>
-            </div>
-            <div className="flex flex-col justify-center p-8 sm:p-12">
-              <p className="mb-3 text-sm font-extrabold text-brand">Sélection en préparation</p>
-              <h2 className="mb-4 text-[var(--font-size-h3)]">Les photographies de chantier sont en cours de validation</h2>
-              <p className="max-w-xl text-ink-muted">Aucune image de banque ne sera présentée comme une réalisation. Les premiers chantiers seront ajoutés dès que leurs photos, leur ville et leur description auront été confirmées.</p>
-            </div>
-          </div>
-        )}
+        <GalerieRealisations />
       </Section>
 
       <Section className="bg-surface-muted">

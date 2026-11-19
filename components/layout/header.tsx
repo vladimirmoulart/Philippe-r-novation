@@ -71,20 +71,21 @@ export function Header() {
         </div>
       </div>
 
-      <div className="mx-auto grid min-h-20 max-w-content grid-cols-[1fr_auto] items-center gap-4 px-4 sm:grid-cols-[1fr_auto_auto] sm:px-6 lg:px-8 xl:grid-cols-[auto_minmax(0,1fr)_auto]">
-        <Link href="/" className="flex shrink-0 items-center py-3 transition-opacity hover:opacity-85" aria-label="Philippe Rénovation — accueil">
-          <Image
-            src="/images/logo/logo-philippe-renovation.png"
-            alt="Philippe Rénovation — toiture, peinture et charpente"
-            width={600}
-            height={148}
-            priority
-            className="h-auto w-40 sm:w-44"
-          />
+      <div className="grid min-h-20 w-full grid-cols-[1fr_auto] items-center gap-4 sm:grid-cols-[1fr_auto_auto] xl:grid-cols-[auto_minmax(0,1fr)_auto]">
+        <Link href="/" className="flex shrink-0 items-center transition-opacity hover:opacity-90" aria-label="Philippe Rénovation — accueil">
+          <span className="logo-header-panel flex items-center">
+            <Image
+              src="/images/logo/logo-philippe-renovation.png"
+              alt="Philippe Rénovation — toiture, peinture et charpente"
+              width={600}
+              height={148}
+              priority
+              className="relative z-10 h-auto w-40 sm:w-44"
+            />
+          </span>
         </Link>
 
-        <nav aria-label="Navigation principale" className="hidden items-center justify-self-center gap-1 xl:flex">
-          <Link href="/" className="rounded-button px-3 py-3 text-sm font-bold hover:bg-ink-inverse/10">Accueil</Link>
+        <nav aria-label="Navigation principale" className="hidden items-center justify-self-center gap-3 xl:flex 2xl:gap-5">
           <div ref={menuServicesRef} className="relative">
             <button
               ref={boutonServicesRef}
@@ -93,31 +94,58 @@ export function Header() {
               aria-controls="menu-nos-services"
               aria-haspopup="true"
               onClick={() => setServicesOuverts((actuel) => !actuel)}
-              className="inline-flex min-h-11 items-center gap-2 rounded-button px-3 py-3 text-sm font-bold hover:bg-ink-inverse/10"
+              className={`inline-flex min-h-11 items-center gap-2 rounded-button px-4 py-3 text-base font-bold hover:bg-ink-inverse/10 ${servicesOuverts ? "bg-ink-inverse/10" : ""}`}
             >
               Nos services
-              <span className={`text-accent transition-transform ${servicesOuverts ? "rotate-180" : ""}`} aria-hidden="true">⌄</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" className="h-4 w-4 text-accent" stroke="currentColor" strokeWidth="2.25" strokeLinecap="round" strokeLinejoin="round">
+                <path d={servicesOuverts ? "m6 15 6-6 6 6" : "m6 9 6 6 6-6"} />
+              </svg>
             </button>
             {servicesOuverts && (
               <div id="menu-nos-services" className="absolute left-0 top-full mt-2 w-72 rounded-card border border-border bg-surface p-2 text-ink shadow-raised">
                 {universServices.map((univers) => (
-                  <Link key={univers.slug} href={`/services/${univers.slug}`} onClick={() => setServicesOuverts(false)} className="group flex items-center justify-between gap-3 rounded-button px-4 py-3 font-bold hover:bg-surface-muted">
-                    {univers.titre}<span className="text-brand transition-transform group-hover:translate-x-1" aria-hidden="true">→</span>
+                  <Link key={univers.slug} href={`/services/${univers.slug}`} onClick={() => setServicesOuverts(false)} className="block rounded-button px-4 py-3 font-bold hover:bg-surface-muted">
+                    {univers.titre}
                   </Link>
                 ))}
                 <Link href="/services" onClick={() => setServicesOuverts(false)} className="mt-2 block border-t border-border px-4 pt-3 text-sm font-bold text-brand">Vue d’ensemble</Link>
               </div>
             )}
           </div>
-          <Link href="/urgence-fuite-toiture" className="rounded-button px-3 py-3 text-sm font-bold hover:bg-ink-inverse/10">Urgence</Link>
-          <Link href="/realisations" className="rounded-button px-3 py-3 text-sm font-bold hover:bg-ink-inverse/10">Réalisations</Link>
-          <Link href="/a-propos" className="rounded-button px-3 py-3 text-sm font-bold hover:bg-ink-inverse/10">À propos</Link>
+          <Link href="/urgence-fuite-toiture" className="rounded-button px-4 py-3 text-base font-bold hover:bg-ink-inverse/10">Urgence</Link>
+          <Link href="/realisations" className="rounded-button px-4 py-3 text-base font-bold hover:bg-ink-inverse/10">Réalisations</Link>
+          <Link href="/a-propos" className="rounded-button px-4 py-3 text-base font-bold hover:bg-ink-inverse/10">À propos</Link>
+          <Link href="/avis" className="rounded-button px-4 py-3 text-base font-bold hover:bg-ink-inverse/10">Avis</Link>
         </nav>
 
-        <Link href="/contact" className="hidden min-h-11 shrink-0 items-center justify-center gap-2 rounded-button bg-brand px-5 py-3 text-sm font-bold text-ink-inverse shadow-card transition-[transform,background-color] hover:-translate-y-0.5 hover:bg-brand-hover sm:flex">
-          Contact <span aria-hidden="true">→</span>
-        </Link>
-        <button ref={boutonRef} type="button" aria-expanded={ouvert} aria-controls="menu-mobile" onClick={() => setOuvert(true)} className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-button border border-ink-inverse/30 px-3 font-bold hover:bg-ink-inverse/10 xl:hidden">
+        <div className="hidden shrink-0 items-center sm:flex">
+          <div className="hidden items-center gap-2 xl:flex" aria-label="Artisan et garantie décennale">
+            <Image
+              src="/images/accueil/logo-artisan.png"
+              alt="Artisan"
+              width={1280}
+              height={910}
+              className="h-12 w-auto object-contain"
+            />
+            <Image
+              src="/images/accueil/garantie-decennale-10-ans-bps.webp"
+              alt="Garantie décennale 10 ans"
+              width={656}
+              height={600}
+              className="h-12 w-auto object-contain"
+            />
+          </div>
+          <Link href="/contact" className="flex shrink-0 items-center font-bold text-ink-inverse transition-opacity hover:opacity-90">
+            <span className="contact-header-panel flex items-center justify-center gap-3 font-display text-lg font-extrabold">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" className="h-5 w-5 shrink-0" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="m3 7 9 6 9-6" />
+              </svg>
+              Contact
+            </span>
+          </Link>
+        </div>
+        <button ref={boutonRef} type="button" aria-expanded={ouvert} aria-controls="menu-mobile" onClick={() => setOuvert(true)} className="mr-4 inline-flex min-h-11 min-w-11 items-center justify-center rounded-button border border-ink-inverse/30 px-3 font-bold hover:bg-ink-inverse/10 sm:mr-6 lg:mr-8 xl:hidden">
           <span className="sr-only">Ouvrir le menu</span><span aria-hidden="true">Menu</span>
         </button>
       </div>
@@ -134,7 +162,6 @@ export function Header() {
               <button type="button" onClick={fermer} className="min-h-11 rounded-button border border-border px-4 font-bold">Fermer</button>
             </div>
             <nav aria-label="Navigation mobile" className="grid gap-5">
-              <Link href="/" onClick={fermer} className="text-lg font-bold">Accueil</Link>
               <div>
                 <p className="mb-3 font-display text-lg font-extrabold text-brand">Nos services</p>
                 <ul className="grid gap-3 border-l border-border pl-4">
@@ -146,6 +173,7 @@ export function Header() {
               <Link href="/urgence-fuite-toiture" onClick={fermer} className="text-lg font-bold text-brand">Urgence fuite 7 j/7</Link>
               <Link href="/realisations" onClick={fermer} className="text-lg font-bold">Réalisations</Link>
               <Link href="/a-propos" onClick={fermer} className="text-lg font-bold">À propos</Link>
+              <Link href="/avis" onClick={fermer} className="text-lg font-bold">Avis</Link>
               <Link href="/contact" onClick={fermer} className="text-lg font-bold">Contact</Link>
               <LienDevis contexte="menu_mobile" className="inline-flex min-h-11 items-center justify-center rounded-button bg-brand px-5 py-2.5 font-bold text-ink-inverse" >Demander un devis</LienDevis>
             </nav>

@@ -1,5 +1,5 @@
 export const universServices = [
-  { slug: "toiture", titre: "Toiture", resume: "Pose, rénovation, entretien, isolation et réparation de la couverture." },
+  { slug: "toiture", titre: "Toiture", resume: "Pose, rénovation, entretien et réparation de la couverture." },
   { slug: "gouttiere-zinguerie", titre: "Gouttière et zinguerie", resume: "Évacuation des eaux pluviales et finitions métalliques de toiture." },
   { slug: "facade", titre: "Façade", resume: "Ravalement, nettoyage et protection des façades." },
   { slug: "peinture", titre: "Peinture", resume: "Préparation et peinture des supports intérieurs et extérieurs." },
@@ -19,12 +19,6 @@ export const services = [
     slug: "pose-renovation-toiture",
     titre: "Pose et rénovation de toiture",
     resume: "Pose, rénovation et remplacement ponctuel de tuiles après examen de la couverture.",
-    univers: "toiture",
-  },
-  {
-    slug: "isolation-toiture",
-    titre: "Isolation de toiture",
-    resume: "Étude des besoins d’isolation liés à la toiture et à son état.",
     univers: "toiture",
   },
   {

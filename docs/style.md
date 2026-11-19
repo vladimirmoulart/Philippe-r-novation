@@ -23,10 +23,10 @@ Pour la phase 1, les typographies Montserrat et Roboto sont conservées via `nex
 |---|---:|---|
 | Police de titres | Montserrat 600–800 | Roofix ; conservée et auto-hébergée au build par `next/font`. |
 | Police de texte | Roboto 400–700 | Roofix ; conservée et auto-hébergée au build par `next/font`. |
-| `brand` | `#c63b00` | Orange sombre dérivé de la capture pour garantir le contraste du texte blanc. |
+| `brand` | `#d63a00` | Orange unique du site, proche de l’identité historique et compatible AA avec du texte blanc. |
 | `brand-hover` | `#9f3000` | Orange de survol accessible. |
-| `brand-subtle` | `#fff4ed` | Fond orange très clair. |
-| `accent` | `#ff3d0a` | Orange vif historique, réservé aux éléments décoratifs. |
+| `brand-subtle` | `#fffaf8` | Fond orange très clair. |
+| `accent` | `#d63a00` | Même orange que `brand`, utilisé pour les éléments décoratifs. |
 | `ink` | `#252a31` | Gris anthracite principal. |
 | `ink-muted` | `#525866` | Gris secondaire. |
 | `surface` | `#ffffff` | Blanc observé. |
@@ -34,6 +34,7 @@ Pour la phase 1, les typographies Montserrat et Roboto sont conservées via `nex
 | `surface-dark` | `#3d424a` | Gris anthracite relevé sur la capture. |
 | `border` | `#d5d7da` | Gris de séparation. |
 | `focus` | `#175cd3` | Bleu choisi pour rester distinct de l’orange. |
+| `rating` | `#f5b301` | Jaune réservé aux étoiles de notation. |
 | Rayon boutons | `6 px` | Provisoire. |
 | Rayon cartes | `8 px` | Provisoire. |
 | Largeur contenu | `80 rem` | Recommandation de phase 0 appliquée. |
@@ -55,12 +56,12 @@ Calcul WCAG 2.1 mis à jour le 17 novembre 2026 :
 
 | Texte | Fond | Ratio | Résultat |
 |---|---|---:|---|
-| `#ffffff` | `#c63b00` | 5,22:1 | AA, y compris texte normal. |
+| `#ffffff` | `#d63a00` | 4,70:1 | AA, y compris texte normal. |
 | `#ffffff` | `#9f3000` | 7,25:1 | AAA. |
 | `#252a31` | `#ffffff` | 14,44:1 | AAA. |
 | `#525866` | `#ffffff` | 7,13:1 | AAA. |
 | `#ffffff` | `#3d424a` | 10,11:1 | AAA. |
-| `#c63b00` | `#fff4ed` | 4,82:1 | AA, y compris texte normal. |
+| `#d63a00` | `#fffaf8` | 4,54:1 | AA, y compris texte normal. |
 | `#175cd3` | `#ffffff` | 5,99:1 | AA pour l’indicateur de focus. |
 | `#252a31` | `#f3f4f6` | 13,12:1 | AAA. |
 

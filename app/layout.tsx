@@ -4,6 +4,8 @@ import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { BarreMobile } from "@/components/layout/barre-mobile";
+import { BoutonRetourHaut } from "@/components/layout/bouton-retour-haut";
+import { RetourHautNavigation } from "@/components/navigation/retour-haut-navigation";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -38,12 +40,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr" className={`${montserrat.variable} ${roboto.variable}`}>
-      <body>
+      <body id="haut-de-page">
+        <RetourHautNavigation />
         <a href="#contenu-principal" className="fixed left-3 top-3 z-[100] -translate-y-24 rounded-button bg-surface-dark px-4 py-3 font-bold text-ink-inverse focus:translate-y-0">Aller au contenu</a>
         <Header />
         <main id="contenu-principal" tabIndex={-1}>{children}</main>
         <Footer />
         <BarreMobile />
+        <BoutonRetourHaut />
       </body>
     </html>
   );
