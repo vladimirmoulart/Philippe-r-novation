@@ -119,7 +119,7 @@ export function Header() {
         </nav>
 
         <div className="hidden shrink-0 items-center sm:flex">
-          <div className="hidden items-center gap-2 xl:flex" aria-label="Artisan et garantie décennale">
+          <div className="hidden items-center gap-2 xl:flex" aria-label="Artisan et assurance décennale">
             <Image
               src="/images/accueil/logo-artisan.png"
               alt="Artisan"
@@ -129,7 +129,7 @@ export function Header() {
             />
             <Image
               src="/images/accueil/garantie-decennale-10-ans-bps.webp"
-              alt="Garantie décennale 10 ans"
+              alt="Assurance responsabilité civile décennale"
               width={656}
               height={600}
               className="h-12 w-auto object-contain"

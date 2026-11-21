@@ -2,7 +2,7 @@
 
 ## 1. Hébergement — validé
 
-Décision : export statique Next.js sur l’hébergement Hostinger/LiteSpeed actuel. Aucun traitement serveur Next ; formulaires via un point d’envoi à choisir, redirections et en-têtes dans `.htaccess`.
+Décision révisée le 21 novembre 2026 : export statique Next.js sur un hébergement OVHcloud. Aucun traitement serveur Next ; formulaires via un point d’envoi à choisir, redirections et en-têtes dans `.htaccess`.
 
 ## 2. Envoi des formulaires
 
@@ -48,7 +48,7 @@ Les 13 métiers restent présentés comme sections internes non cliquables. La p
 ## Points non vérifiés
 
 - Coûts et contraintes contractuelles des prestataires.
-- Hébergement actuel exact chez Hostinger.
+- Offre OVHcloud exacte et localisation contractuelle du centre de données.
 - Volume mensuel des formulaires et des photos.
 - Besoin d’un tableau de bord d’audience partagé.
 

@@ -8,7 +8,7 @@ Refonte en code du site vitrine de Philippe Rénovation, artisan couvreur-peintr
 
 - Next.js App Router, TypeScript strict, ESLint et Tailwind CSS ; versions exactes dans `package.json`.
 - Contenu typé dans `content/`, sans CMS.
-- Export statique obligatoire avec `output: "export"` et déploiement Hostinger/LiteSpeed.
+- Export statique obligatoire avec `output: "export"` et déploiement sur un hébergement OVHcloud.
 - Interdits : route handlers, middleware, Server Actions, redirections Next et toute dépendance serveur à l’exécution.
 - Formulaires complets côté interface mais sans envoi jusqu’à la phase 5.
 - Images pré-optimisées au build en AVIF/WebP et tailles adaptées ; aucun optimiseur Next à l’exécution.

@@ -2,13 +2,6 @@
 
 ## Entreprise et conformité
 
-- `[À FOURNIR : nom juridique complet, forme juridique et nom commercial définitif]`.
-- `[À FOURNIR : SIRET]`.
-- `[À FOURNIR : ancienneté ou date de création vérifiable]`.
-- `[À FOURNIR : nom de l’assureur décennal, numéro de contrat, activités et zone géographique couvertes, période de validité]`.
-- `[À FOURNIR : identité du directeur de publication]`.
-- `[À FOURNIR : coordonnées et raison sociale de l’hébergeur retenu]`.
-- `[À FOURNIR : registre d’immatriculation professionnelle et numéro, le cas échéant]`.
 - `[À FOURNIR : nom, adresse et site internet du médiateur de la consommation]`.
 - `[À FOURNIR : confirmation que le devis est gratuit et conditions éventuelles]`.
 
@@ -55,7 +48,7 @@
 - `[À FOURNIR : copie locale WordPress ou archive de wp-content]`.
 - `[À FOURNIR : style.css du thème enfant et wp-content/uploads/elementor/css/post-*.css]`.
 - `[À FOURNIR : export complet du sitemap et, si possible, de la médiathèque]`.
-- `[À FOURNIR : accès à l’hébergement Hostinger/LiteSpeed au moment du déploiement]`.
+- `[À FOURNIR : accès à l’hébergement OVHcloud et référence de l’offre au moment du déploiement]`.
 - `[À FOURNIR : solution d’envoi des formulaires, adresse destinataire et politique de conservation]`.
 - `[À FOURNIR : nombre, formats et taille maximale des photos acceptées]`.
 - `[À FOURNIR : solution de mesure d’audience/conversions retenue]`.
