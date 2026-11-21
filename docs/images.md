@@ -42,3 +42,41 @@ Aucune sélection n’est faite avant validation de la direction artistique. Les
 |---|---|---|---|
 | `couvreur-pose-tuiles-hero.webp` | Arrière-plan décoratif du héros de l’accueil, avec voile sombre | Fichier `bloc_1601730103_3.jpeg` fourni et explicitement demandé par le client le 17 novembre 2026 | Origine, auteur et droits de publication à confirmer avant mise en ligne définitive |
 
+## Images des services toiture reçues le 21 novembre 2026
+
+Les fichiers PNG fournis ont été convertis localement en WebP, sans installation de dépendance et sans métadonnées, afin de réduire leur poids au chargement.
+
+| Fichier utilisé | Usage | Source | Statut |
+|---|---|---|---|
+| `renovation-couverture-tuiles.webp` | Carte « Pose et rénovation de toiture » | Fichier client `renovation-toiture.png` | Droits à confirmer |
+| `charpente-bois-traditionnelle.webp` | Carte « Charpente » | Fichier client `charpente.png` | Droits à confirmer |
+| `reparation-souche-cheminee-toiture.webp` | Carte « Réparation de cheminée » | Fichier client `reparation-cheminee.png` | Droits à confirmer |
+| `remplacement-tuile-couverture.webp` | Carte « Réparation de toiture » | Fichier client `reparation-toiture.png` | Droits à confirmer |
+
+## Images des services gouttière et zinguerie reçues le 21 novembre 2026
+
+Les noms utilisés sur le site sont descriptifs, en minuscules et sans accent. Les PNG fournis ont été convertis localement en WebP et débarrassés de leurs métadonnées.
+
+| Fichier utilisé | Usage | Source | Statut |
+|---|---|---|---|
+| `pose-gouttiere-metallique-toiture.webp` | Carte « Gouttière » | Fichier client `goutière.png` | Droits à confirmer |
+| `zinguerie-raccord-etancheite-toiture.webp` | Carte « Zinguerie » | Fichier client `Zinguerie.png` | Droits à confirmer |
+
+## Images des services façade reçues le 21 novembre 2026
+
+Les fichiers utilisés portent des noms descriptifs en minuscules, sans accent. Les PNG fournis ont été convertis localement en WebP et débarrassés de leurs métadonnées.
+
+| Fichier utilisé | Usage | Source | Statut |
+|---|---|---|---|
+| `ravalement-facade-maison.webp` | Carte « Ravalement de façade » | Fichier client `ravalement-de-façade.png` | Droits à confirmer |
+| `nettoyage-facade-maison.webp` | Carte « Nettoyage et protection de façade » | Fichier client `nettoyage-de-façade.png` | Droits à confirmer |
+
+## Images des services peinture reçues le 21 novembre 2026
+
+Les fichiers utilisés portent des noms SEO descriptifs en minuscules et sans accent. Les PNG fournis ont été convertis localement en WebP et débarrassés de leurs métadonnées.
+
+| Fichier utilisé | Usage | Source | Statut |
+|---|---|---|---|
+| `peinture-murs-interieur-maison.webp` | Carte « Peinture intérieure » | Fichier client `peinture-intérieur.png` | Droits à confirmer |
+| `peinture-portail-metallique-exterieur.webp` | Carte « Peinture extérieure » | Fichier client `peinture-extérieur.png` | Droits à confirmer |
+
